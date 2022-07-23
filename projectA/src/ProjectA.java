@@ -1,6 +1,8 @@
 package com.garbage.aaa;
 import java.io.*;
 
+import com.garbage.aaa.ProjectA;
+
 public class ProjectA {
     public ProjectA () {  }
     public int init() {
@@ -17,5 +19,12 @@ public class ProjectA {
         System.out.println("In ProjectA, classify(int in)");
         int ret = (in > 10)? 0: 1;
         return ret;
+    }
+
+    public static void main(String args[]){
+        ProjectA projectA = new ProjectA();
+        projectA.init();
+        projectA.readFiles(10);
+        projectA.classify(100);
     }
 }

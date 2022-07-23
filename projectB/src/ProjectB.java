@@ -29,4 +29,12 @@ public class ProjectB {
     }
 
     private ProjectA projectA;
+
+    public static void main(String[] args){
+        ProjectB projectB = new ProjectB();
+        projectB.init();
+        projectB.readFiles(111);
+        projectB.classify(1020);
+
+    }
 }
